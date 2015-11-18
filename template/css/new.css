@@ -1,0 +1,312 @@
+html{
+	/*overflow-x:hidden;*/
+}
+
+body{
+	width:100%;
+}
+
+.navbar-brand{
+	font-size: 150%;
+}
+
+.carousel{
+	margin-top: 50px;
+}
+
+.work-flow>.row{
+	margin-left: 0px;
+	margin-right: 0px;
+}
+.navbar{
+	margin-bottom: 1px;
+}
+
+.red{
+	color:#ED4938;
+}
+
+.green{
+	color:#ADC607;
+}
+
+.yellow{
+	color:#F4C10D;
+}
+
+.brown{
+	color:#FEC239;
+}
+
+.cherry{
+	color:#de3974;
+}
+
+.purple{
+	color:#7b3dba;
+}
+
+.orange{
+	color:#f87117;
+}
+
+.blue{
+	color:#3D82AB;
+}
+
+
+.lblue{
+	color:#03cec2;
+}
+
+.black{
+	color:black;
+}
+
+.grey-background{
+	color:grey;
+	background-color:#ccc;
+}
+
+.message-title{
+	padding-left: 100px;
+	padding-right: 100px;
+	font-size: 150%;
+	font-family: arial;
+	margin:auto;
+}
+
+
+.message-block{
+	padding-left: 100px;
+	padding-right: 100px;
+	text-align: justify;
+	font-size: 150%;
+	font-family: arial;
+	max-width: 750px;
+	margin:auto;
+}
+
+.image-padding{
+	padding: 10px;
+}
+
+strong{
+	color:black;
+}
+
+.col-lg-4 > img{
+	vertical-align: center;
+}
+
+.profile{
+	margin-bottom: 20px;
+}
+
+.title{
+	text-shadow:
+	-1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000; 
+}
+
+.wordcloud
+{
+	width: 100%;
+}
+
+.feature-title{
+	font-family: cursive;
+	font-size: 120%;
+}
+
+.main-shift{
+	margin-top: 100px;
+}
+
+@media screen and (min-width: 992px)
+{
+	.carousel-caption
+	{
+		bottom: 150px;
+	}
+
+	.feature-title{
+		font-size: 150%;
+	}
+}
+
+
+@media screen and (min-width: 1200px)
+{
+	.carousel-inner>.item>a>img, .carousel-inner>.item>img
+	{
+		width: 100%;
+	}
+}
+
+
+@media screen and (max-width: 992px)
+{
+	.navbar-right .form-group > input
+	{
+		width:75px;
+	}
+
+	.message-title{
+		padding-left: 50px;
+		padding-right: 50px;
+		font-size: 100%;
+	} 
+	.message-block{
+		padding-left: 50px;
+		padding-right: 50px;
+		font-size: 100%;
+	}
+
+	.carousel-caption>h1
+	{
+		font-size: 150%;
+	}
+
+
+}
+
+@media screen and (max-width: 768px)
+{
+	.navbar-right .form-group > input
+	{
+		width:100px;
+	}
+
+	.navbar-right button{
+		margin-left: 10px;
+	}
+	.navbar-right input{
+		margin-left: 10px;
+	}
+
+
+	.carousel-caption>h1
+	{
+		font-size: 120%;
+	}
+
+
+	.sm-hide{
+		display: none;
+	}
+
+}
+
+footer {
+    padding: 10px 0;
+    background-color: #333;
+}
+
+/* back to top */
+.cd-top {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  position: fixed;
+  bottom: 40px;
+  right: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  /* image replacement properties */
+  overflow: hidden;
+  text-indent: 100%;
+  white-space: nowrap;
+  background: rgba(232, 98, 86, 0.8) url('../image/cd-top-arrow.svg') no-repeat center 50%;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: opacity .3s 0s, visibility 0s .3s;
+  -moz-transition: opacity .3s 0s, visibility 0s .3s;
+  transition: opacity .3s 0s, visibility 0s .3s;
+}
+.cd-top.cd-is-visible, .cd-top.cd-fade-out, .no-touch .cd-top:hover {
+  -webkit-transition: opacity .3s 0s, visibility 0s 0s;
+  -moz-transition: opacity .3s 0s, visibility 0s 0s;
+  transition: opacity .3s 0s, visibility 0s 0s;
+}
+.cd-top.cd-is-visible {
+  /* the button becomes visible */
+  visibility: visible;
+  opacity: 1;
+}
+.cd-top.cd-fade-out {
+  /* if the user keeps scrolling down, the button is out of focus and becomes less visible */
+  opacity: .5;
+}
+.no-touch .cd-top:hover {
+  background-color: #e86256;
+  opacity: 1;
+}
+
+@media only screen and (min-width: 768px) {
+  .cd-top {
+    right: 20px;
+    bottom: 20px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .cd-top {
+    height: 60px;
+    width: 60px;
+    right: 30px;
+    bottom: 30px;
+  }
+}
+
+/* signin signup*/
+.cd-signin, .cd-signup {
+	padding: .6em 1em;
+	border: 1px solid rgba(#FFF, .6);
+	border-radius: 50em;
+}
+
+.cd-signup {
+	background: #2f889a;
+	border: none;
+}
+
+
+/*button*/
+.submit {
+    /* placing */
+    display: block;
+    /* end of placing */
+    height: 50px;
+    width: 120px;
+    background-color: #FFF;
+    border: 2px solid #1ECD97;
+    border-radius: 50px;
+    color: #1ECD97;
+    outline-style: none;
+    cursor: pointer;
+}
+
+.submit:hover {
+    background-color: #1ECD97;
+    color: #FFF;
+}
+
+.submit_nav {
+	display: block;
+    /* end of placing */
+    height: 30px;
+    width: 70px;
+	background-color: #1ECD97;
+    color: #FFF;
+    border: 2px solid #1ECD97;
+    border-radius: 50px;
+    outline-style: none;
+    cursor: pointer;
+}
+
+.submit_nav:hover {
+    background-color: #FFF;
+    color: #1ECD97;
+}
+
